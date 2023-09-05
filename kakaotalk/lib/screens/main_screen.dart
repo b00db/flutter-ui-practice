@@ -1,24 +1,3 @@
-# 카카오톡 UI 구현해보기
-
-## 과정 엿보기 👀
-
-### 1. 홈화면 만들기 
-
-핵심 개념 
-- IndexedStack 
-- BottomNavigationBar
-
-<br/>
-
-<img src="./assets/kakaotalk1.gif" width="25%" />
-
-<br/>
-
-<details>
-<summary>핵심 코드</summary>
-<div markdown="1">
-
-```dart
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:kakaotalk/screens/chat_screen.dart';
@@ -81,13 +60,3 @@ class _MainScreenState extends State<MainScreen> {
     );
   }
 }
-
-```
-
-</div>
-</details>
-
-<br/>
-<br/>
-
-## 결과 엿보기 👀
