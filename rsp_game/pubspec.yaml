@@ -46,7 +46,16 @@ dev_dependencies:
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
   flutter_lints: ^2.0.0
+  flutter_launcher_icons: ^0.13.1
 
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/images/rsp.jpg"
+  image_path_ios: "assets/images/rsp.jpg"
+  min_sdk_android: 21 # android min sdk min:16, default 21
+  remove_alpha_ios: true
+  
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
 

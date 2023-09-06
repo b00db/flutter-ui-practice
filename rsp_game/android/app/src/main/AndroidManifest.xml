@@ -1,6 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
     <application
-        android:label="rsp_game"
+        android:label="가위 바위 보"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
