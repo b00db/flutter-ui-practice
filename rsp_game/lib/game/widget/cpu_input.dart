@@ -31,7 +31,8 @@ class CpuInput extends StatelessWidget {
     }
 
     return const SizedBox(
-      height: 85,
+      height: 80,
+      width: 80,
       child: Center(
         child: Text(
           "?",
