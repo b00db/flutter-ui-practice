@@ -5,7 +5,7 @@ class InputCard extends StatelessWidget {
   final Widget child;
 
   const InputCard({
-    required this.callback,
+    this.callback,
     required this.child,
     super.key,
   });

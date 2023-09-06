@@ -1,16 +1,10 @@
-# rsp_game
+# 가위, 바위, 보 !
 
-A new Flutter project.
+## 결과 엿보기 👀
 
-## Getting Started
+<img src="./assets/rsp1.png" width="25%" />
+<img src="./assets/rsp2.png" width="25%" />
 
-This project is a starting point for a Flutter application.
+<br/>
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+[코드 보러가기](./lib/main.dart)
