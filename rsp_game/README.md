@@ -2,8 +2,10 @@
 
 ## 결과 엿보기 👀
 
-<img src="./assets/rsp1.png" width="25%" />
-<img src="./assets/rsp2.png" width="25%" />
+<p align="left">
+    <img src="./assets/rsp1.png" width="25%" />
+    <img src="./assets/rsp2.png" width="25%" />
+<p>
 
 <br/>
 
