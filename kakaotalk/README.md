@@ -2,7 +2,7 @@
 
 ## 과정 엿보기 👀
 
-### 1. 홈화면
+### 1. 홈 화면
 
 핵심 개념 
 - IndexedStack 
@@ -187,6 +187,20 @@ class ProfileCard extends StatelessWidget {
 </details>
 
 <br/>
+
+### 3. 프로필 화면
+
+핵심 개념 
+- Container
+- BoxDecoration
+
+<br/>
+
+<p align="left">
+    <img src="./assets/kakaotalk3.png" width="25%" />
+    <img src="./assets/kakaotalk4.png" width="25%" />
+<p>
+
 
 <br/>
 <br/>
