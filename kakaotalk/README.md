@@ -191,8 +191,8 @@ class ProfileCard extends StatelessWidget {
 ### 3. 프로필 화면
 
 핵심 개념 
-- Container
-- BoxDecoration
+- InkWell
+- Navigator
 
 <br/>
 
@@ -201,6 +201,74 @@ class ProfileCard extends StatelessWidget {
     <img src="./assets/kakaotalk4.png" width="25%" />
 <p>
 
+<br/>
+
+<details>
+<summary>핵심 코드</summary>
+<div markdown="1">
+
+```dart
+
+import 'package:flutter/material.dart';
+import 'package:kakaotalk/models/user.dart';
+import 'package:kakaotalk/screens/profile_screen.dart';
+
+class ProfileCard extends StatelessWidget {
+  final User user;
+
+  const ProfileCard({required this.user, super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return InkWell(
+      onTap: () {
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) => ProfileScreen(user: user),
+          ),
+        );
+      },
+      child: ListTile(
+        leading: CircleAvatar(
+          backgroundImage: AssetImage(user.profileImage),
+        ),
+        title: Text(user.name),
+        subtitle: Text(user.info),
+      ),
+    );
+  }
+}
+
+```
+
+</div>
+</details>
+
+<details>
+<summary>핵심 코드</summary>
+<div markdown="1">
+
+```dart
+
+appBar: AppBar(
+          backgroundColor: Colors.transparent,
+          leading: IconButton(
+            icon: const Icon(
+              FontAwesomeIcons.x,
+              size: 20,
+              color: Colors.white,
+            ),
+            onPressed: () => Navigator.pop(context),
+          ),
+        ),
+
+```
+
+</div>
+</details>
+
+<br/>
 
 <br/>
 <br/>
