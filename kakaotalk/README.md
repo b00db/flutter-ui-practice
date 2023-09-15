@@ -270,6 +270,132 @@ appBar: AppBar(
 
 <br/>
 
+### 4. 채팅 리스트
+
+핵심 개념
+- ListView
+- ListTile
+
+<br/>
+
+<img src="./assets/kakaotalk5.png" width="25%" />
+
+<br/>
+
+<details>
+<summary>핵심 코드</summary>
+<div markdown="1">
+
+```dart
+
+import 'package:flutter/material.dart';
+import 'package:kakaotalk/components/chat_card.dart';
+import 'package:kakaotalk/models/chat.dart';
+
+class ChatScreen extends StatelessWidget {
+  const ChatScreen({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      backgroundColor: Colors.white,
+      appBar: AppBar(
+        title: const Text("채팅"),
+      ),
+      body: ListView(
+        children: List.generate(
+          chats.length,
+          (index) => ChatCard(chat: chats[index]),
+        ),
+      ),
+    );
+  }
+}
+
+```
+
+</div>
+</details>
+
+<details>
+<summary>핵심 코드</summary>
+<div markdown="1">
+
+```dart
+
+import 'package:flutter/material.dart';
+import 'package:kakaotalk/models/chat.dart';
+
+class ChatCard extends StatelessWidget {
+  final Chat chat;
+
+  const ChatCard({
+    super.key,
+    required this.chat,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return InkWell(
+      onTap: () {},
+      child: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+        child: Row(
+          children: [
+            Expanded(
+              child: ListTile(
+                leading: CircleAvatar(
+                  backgroundImage: AssetImage(chat.image),
+                ),
+                title: Text(chat.title),
+                subtitle: Text(chat.content),
+                contentPadding: const EdgeInsets.all(0),
+              ),
+            ),
+            Column(
+              children: [
+                Text(
+                  chat.date,
+                  style: const TextStyle(
+                    color: Colors.grey,
+                    fontSize: 12,
+                  ),
+                ),
+                const SizedBox(
+                  height: 5,
+                ),
+                if (chat.count != "0")
+                  Container(
+                    padding:
+                        const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(20),
+                      color: Colors.red,
+                    ),
+                    child: Text(
+                      chat.count,
+                      style: const TextStyle(
+                        color: Colors.white,
+                        fontSize: 12,
+                      ),
+                    ),
+                  ),
+              ],
+            )
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+```
+
+</div>
+</details>
+
+<br/>
+
 <br/>
 <br/>
 
