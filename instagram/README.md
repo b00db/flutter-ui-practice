@@ -212,8 +212,6 @@ class _InstagramHomeState extends State<InstagramHome> {
 </div>
 </details>
 
-<br/>
-
 <details>
 <summary>핵심 코드</summary>
 <div markdown="1">
@@ -575,3 +573,5 @@ class SearchGrid extends StatelessWidget {
 <br/>
 
 ## 결과 엿보기 👀
+
+<img src="./assets/instagram5.gif" width="25%" />
