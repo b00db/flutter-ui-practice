@@ -575,3 +575,7 @@ class SearchGrid extends StatelessWidget {
 ## 결과 엿보기 👀
 
 <img src="./assets/instagram5.gif" width="25%" />
+
+<br/>
+
+[코드 보러가기](./lib/main.dart)
