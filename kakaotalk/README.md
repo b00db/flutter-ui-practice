@@ -526,6 +526,69 @@ class _ChatRoomScreenState extends State<ChatRoomScreen> {
 </details>
 
 <br/>
+
+### 6. 더보기 화면
+
+핵심 개념
+- GridView
+
+<br/>
+
+<img src="./assets/kakaotalk7.png" width="25%" />
+
+<br/>
+
+<details>
+<summary>핵심 코드</summary>
+<div markdown="1">
+
+```dart
+
+import 'package:flutter/material.dart';
+import 'package:kakaotalk/models/tab.dart';
+
+class MoreScreen extends StatelessWidget {
+  const MoreScreen({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      backgroundColor: Colors.white,
+      appBar: AppBar(
+        title: const Text('더보기'),
+      ),
+      body: Padding(
+        padding: const EdgeInsets.only(top: 30),
+        child: GridView.count(
+          crossAxisCount: 4,
+          children: List.generate(
+            tabs.length,
+            (index) => Column(
+              children: [
+                Icon(tabs[index].icon),
+                const SizedBox(height: 5),
+                Text(tabs[index].text)
+              ],
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+```
+
+</div>
+</details>
+
+<br/>
 <br/>
 
 ## 결과 엿보기 👀
+
+<img src="./assets/kakaotalk8.gif" width="25%" />
+
+<br/>
+
+[코드 보러가기](./lib/main.dart)
