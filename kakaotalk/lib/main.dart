@@ -26,6 +26,15 @@ class MyApp extends StatelessWidget {
             fontSize: 24,
           ),
         ),
+        textTheme: const TextTheme(
+          titleLarge: TextStyle(
+            color: Colors.black,
+            fontSize: 22,
+          ),
+        ),
+        iconTheme: const IconThemeData(
+          color: Colors.black,
+        ),
       ),
       home: const MainScreen(),
     );
